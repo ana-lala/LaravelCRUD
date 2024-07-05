@@ -5,10 +5,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                @session('status')
+                <div class="alert alert-success">
+                    {{ session('status')}}
+                </div>
+                @endsession      
+
                 <div class="card">
                     <div class="card-header">
                         <h4>Categories List
-                        <a href="{{ url('https://probable-space-doodle-4v66vjjx5rx25j5j-80.app.github.dev/category/create')}}" class="btn btn-primary float-end">Add Category</a>
+                        <a href="{{ route('category.create')}}" class="btn btn-primary float-end">Add Category</a>
                         </h4>
                     </div>
                     <div class="card-body">
