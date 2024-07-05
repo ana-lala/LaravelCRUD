@@ -39,6 +39,12 @@ return [
     |
     */
 
+    'providers' => [
+    // Otros proveedores de servicios
+    App\Providers\AppUrlServiceProvider::class,
+    ],
+
+
     'debug' => (bool) env('APP_DEBUG', false),
 
     /*
